@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morteza Khoshsimaie Chenar — Agricultural AI &amp; Water Science Researcher</title>
+  <meta name="description" content="Personal academic website of Morteza Khoshsimaie Chenar, Ph.D. in Irrigation and Drainage Engineering. Research on agricultural AI, machine learning, decision support systems, evapotranspiration modelling and precision water management." />
+  <meta name="author" content="Morteza Khoshsimaie Chenar" />
+  <meta name="keywords" content="Agricultural AI, Machine Learning, Decision Support Systems, Irrigation, Fertigation, Evapotranspiration, Soil Salinity, Climate-Smart Agriculture, GreenSmart-DSS, SWAP, AquaCrop" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Morteza Khoshsimaie Chenar — Agricultural AI &amp; Water Science Researcher" />
+  <meta property="og:description" content="Bridging computational methods and agricultural water management: AI-powered decision support systems, evapotranspiration modelling and precision irrigation." />
+  <meta property="profile:first_name" content="Morteza" />
+  <meta property="profile:last_name" content="Khoshsimaie Chenar" />
+
+  <link rel="canonical" href="https://orcid.org/0000-0001-9031-7914" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Flag JS availability so reveal animations are progressive enhancement only -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Morteza Khoshsimaie Chenar",
+    "givenName": "Morteza",
+    "familyName": "Khoshsimaie Chenar",
+    "jobTitle": "Researcher in Agricultural AI &amp; Irrigation Engineering",
+    "email": "mailto:khoshsima.mortaza@ut.ac.ir",
+    "telephone": "+98 9147696107",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tabriz",
+      "addressRegion": "East Azerbaijan",
+      "addressCountry": "IR"
+    },
+    "url": "https://orcid.org/0000-0001-9031-7914",
+    "orcid": "https://orcid.org/0000-0001-9031-7914",
+    "sameAs": [
+      "https://github.com/GreenSmart-DSS",
+      "https://www.linkedin.com/in/morteza-khoshsimaie-chenar-1195a8215",
+      "https://www.researchgate.net/profile/Morteza-Khoshsima",
+      "https://www.scopus.com/inward/authorDetails.url?authorID=58998009500"
+    ],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Tehran", "sameAs": "https://ror.org/05vf56z40" },
+      { "@type": "CollegeOrUniversity", "name": "Payame Noor University", "sameAs": "https://ror.org/031699d98" }
+    ],
+    "knowsAbout": [
+      "Agricultural Artificial Intelligence",
+      "Machine Learning",
+      "Decision Support Systems",
+      "Irrigation and Fertigation Management",
+      "Evapotranspiration Modeling",
+      "Soil Salinity",
+      "Climate-Smart Agriculture",
+      "Agro-hydrological Modeling",
+      "Remote Sensing"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34" focusable="false">
+            <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+            <path d="M11 27V13M11 20h18M29 27V13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="2.6" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">M. Khoshsimaie Chenar</span>
+          <span class="brand-sub">Agricultural AI &amp; Water Science</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5 8.7 8.7 0 1 0 20.5 14.6Z"/>
+          </svg>
+        </button>
+        <a class="btn btn-primary btn-sm cv-btn" href="assets/Morteza_KhoshsimaieChenar_CV.pdf" download>
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v11m0 0 4-4m-4 4-4-4M4.5 19.5h15"/>
+          </svg>
+          <span>Download CV</span>
+        </a>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primaryNav">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-motif" aria-hidden="true">
+        <svg viewBox="0 0 800 520" preserveAspectRatio="none" focusable="false">
+          <g fill="none" stroke="currentColor" stroke-width="1.1" opacity=".5">
+            <path d="M-20 120 C 120 60, 240 180, 380 120 S 640 60, 840 130"/>
+            <path d="M-20 160 C 120 100, 240 220, 380 160 S 640 100, 840 170"/>
+            <path d="M-20 200 C 120 140, 240 260, 380 200 S 640 140, 840 210"/>
+            <path d="M-20 240 C 120 180, 240 300, 380 240 S 640 180, 840 250"/>
+            <path d="M-20 280 C 120 220, 240 340, 380 280 S 640 220, 840 290"/>
+            <path d="M-20 320 C 120 260, 240 380, 380 320 S 640 260, 840 330"/>
+            <path d="M-20 360 C 120 300, 240 420, 380 360 S 640 300, 840 370"/>
+            <path d="M-20 400 C 120 340, 240 460, 380 400 S 640 340, 840 410"/>
+          </g>
+          <g fill="none" stroke="currentColor" stroke-width="0.8" opacity=".22" stroke-dasharray="3 6">
+            <circle cx="620" cy="250" r="70"/>
+            <circle cx="620" cy="250" r="120"/>
+            <circle cx="620" cy="250" r="175"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker reveal">Ph.D., Irrigation &amp; Drainage Engineering · University of Tehran</p>
+          <h1 class="hero-title reveal">Morteza<br />Khoshsimaie Chenar</h1>
+          <p class="hero-tag reveal">
+            Agricultural AI <span class="dot">·</span> Machine Learning <span class="dot">·</span>
+            Climate-Smart Agriculture <span class="dot">·</span> Decision Support Systems
+          </p>
+          <p class="hero-intro reveal">
+            I bridge advanced computational methods and practical agricultural water management — building
+            AI-powered decision support systems, hybrid biophysical–machine-learning models, and open-source
+            scientific software that sustain crop productivity in water-scarce and salt-affected environments.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13m0 0-5-5m5 5-5 5"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#publications">Publications</a>
+          </div>
+
+          <ul class="social-list reveal" aria-label="Profiles and contact">
+            <li><a class="chip" href="https://orcid.org/0000-0001-9031-7914" target="_blank" rel="noopener"><span class="chip-mark">iD</span><span>ORCID</span></a></li>
+            <li><a class="chip" href="https://github.com/GreenSmart-DSS" target="_blank" rel="noopener"><span class="chip-mark">GH</span><span>GitHub</span></a></li>
+            <li><a class="chip" href="https://www.linkedin.com/in/morteza-khoshsimaie-chenar-1195a8215" target="_blank" rel="noopener"><span class="chip-mark">in</span><span>LinkedIn</span></a></li>
+            <li><a class="chip" href="https://www.researchgate.net/profile/Morteza-Khoshsima" target="_blank" rel="noopener"><span class="chip-mark">RG</span><span>ResearchGate</span></a></li>
+            <li><a class="chip" href="https://www.scopus.com/inward/authorDetails.url?authorID=58998009500&amp;partnerID=MN8TOARS" target="_blank" rel="noopener"><span class="chip-mark">SC</span><span>Scopus</span></a></li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Key facts">
+          <div class="panel-head">
+            <span class="panel-eyebrow">Researcher profile</span>
+            <span class="panel-badge">ORCID verified</span>
+          </div>
+          <dl class="panel-facts">
+            <div class="fact"><dt>Position</dt><dd>Researcher · Agricultural AI</dd></div>
+            <div class="fact"><dt>Location</dt><dd>Tabriz, East Azerbaijan, Iran</dd></div>
+            <div class="fact"><dt>Doctorate</dt><dd>University of Tehran, 2026</dd></div>
+            <div class="fact"><dt>Scopus ID</dt><dd>58998009500</dd></div>
+          </dl>
+          <div class="panel-stats">
+            <div class="stat"><span class="stat-num">11</span><span class="stat-lbl">Journal articles</span></div>
+            <div class="stat"><span class="stat-num">8</span><span class="stat-lbl">Open-source tools</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-lbl">Flagship systems</span></div>
+          </div>
+          <hr class="panel-rule" />
+          <p class="panel-note">Fields of interest: precision irrigation &amp; fertigation, evapotranspiration modelling, soil salinity, remote-sensing data assimilation.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">01</span>
+          <h2 class="section-title">Profile</h2>
+          <p class="section-lead">A short introduction to my research identity and motivations.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="prose reveal">
+            <p class="lead-drop">
+              Agricultural AI researcher with expertise in climate-smart agriculture, decision support systems,
+              and machine learning applications for water and nutrient management. My research combines
+              data-driven modelling, environmental analytics, crop modelling and software development to improve
+              agricultural productivity, resource-use efficiency and climate resilience.
+            </p>
+            <p>
+              The cornerstone of my doctoral work at the University of Tehran was the conception, development and
+              field validation of <strong>GreenSmart-DSS</strong> — a fully integrated, AI-powered decision support
+              system for greenhouse management. It couples a Django full-stack architecture with hybrid modelling:
+              biophysical soil–water–plant processes combined with machine learning (Random Forest, LightGBM,
+              Optuna) and an optimised fertigation engine, translating complex environmental and salinity data into
+              actionable real-time irrigation and nutrient schedules. The system was validated with two years of
+              cucumber experiments under variable saline conditions.
+            </p>
+            <p>
+              Beyond applied DSS development, my portfolio spans agro-hydrological system modelling (SWAP,
+              AquaCrop, HYDRUS-1D), remote-sensing data assimilation — integrating Sentinel-2 and Landsat-8 with
+              genetic algorithms for root-zone soil moisture estimation — and quantification of crop salinity
+              tolerance thresholds. My approach is inherently interdisciplinary: rigorous experimental design
+              combined with advanced analytics, feature engineering and model interpretability to deliver insights
+              that are both scientifically robust and operationally feasible.
+            </p>
+            <p>
+              My long-term goal is to develop scalable digital frameworks that enhance water and nutrient use
+              efficiency, reduce environmental footprints and support precision-farming transitions in arid and
+              semi-arid regions globally.
+            </p>
+          </div>
+
+          <aside class="side-card reveal">
+            <h3 class="side-title">Contact</h3>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+                <a href="mailto:khoshsima.mortaza@ut.ac.ir">khoshsima.mortaza@ut.ac.ir</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></svg>
+                <a href="tel:+989147696107">+98 914 769 6107</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                <span>Tabriz, East Azerbaijan, Iran</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.4 3 14.6 0 18M12 3c-3 3.4-3 14.6 0 18"/></svg>
+                <a href="https://orcid.org/0000-0001-9031-7914" target="_blank" rel="noopener">ORCID 0000-0001-9031-7914</a>
+              </li>
+            </ul>
+            <hr class="panel-rule" />
+            <h3 class="side-title">Languages</h3>
+            <ul class="lang-list">
+              <li><span>Persian</span><b class="bar"><i style="width:100%"></i></b><em>Native</em></li>
+              <li><span>Turkish (Azeri)</span><b class="bar"><i style="width:100%"></i></b><em>Native</em></li>
+              <li><span>English</span><b class="bar"><i style="width:78%"></i></b><em>Academic</em></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERTISE ================= -->
+    <section class="section section-alt" id="expertise">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">02</span>
+          <h2 class="section-title">Research Expertise</h2>
+          <p class="section-lead">Eight themes spanning computational agriculture, water engineering and data science.</p>
+        </header>
+
+        <div class="cards expertise-grid">
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 8V6a3 3 0 0 1 6 0v2M8.5 14h.01M12 14h.01M15.5 14h.01"/></svg></span>
+            <h3>Agricultural AI &amp; Machine Learning</h3>
+            <p>Supervised learning, ensembles and feature engineering for environmental and agricultural prediction, with rigorous validation and interpretability.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M3 12.5 12 17l9-4.5M3 16.5 12 21l9-4.5"/></svg></span>
+            <h3>Decision Support Systems</h3>
+            <p>Design and full-stack development of AI-based, web-delivered DSS platforms that convert models and climate data into operational farm advice.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c0-6 3-9 8-10-1 6-3.5 9-8 10Z"/><path d="M12 21C12 15 9 12 4 11c1 6 3.5 9 8 10Z"/><path d="M12 21v-6"/></svg></span>
+            <h3>Climate-Smart Agriculture</h3>
+            <p>Quantifying and improving resilience of cropping systems under climate stress, water scarcity and salinity in arid and semi-arid regions.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5m0 14h16"/><path d="M7 15.5l4-5 3.5 3L20 7"/></svg></span>
+            <h3>Environmental Data Analytics</h3>
+            <p>Time-series and multi-source environmental data analysis, statistical learning and visualisation for hydrological and agronomic insight.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s5.5 6.1 5.5 10a5.5 5.5 0 0 1-11 0C6.5 9.1 12 3 12 3Z"/></svg></span>
+            <h3>Precision Irrigation &amp; Fertigation</h3>
+            <p>Soil water balance, depletion-based scheduling and nutrient-solution optimisation for water- and nutrient-efficient production.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V9M12 9 7 13M12 9l5 4"/><path d="M4 5h16M6.5 5 12 3l5.5 2"/></svg></span>
+            <h3>Crop &amp; Agro-hydrological Modelling</h3>
+            <p>Process-based simulation with SWAP, AquaCrop and HYDRUS-1D for soil water, salinity dynamics, yield and evapotranspiration.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></svg></span>
+            <h3>Water &amp; Nutrient Use Efficiency</h3>
+            <p>Optimising water productivity and fertiliser use through scheduling, blending strategies and leaching management under saline water.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16.5 9 11l3.5 3.5L20 7"/><path d="M4 20h16"/></svg></span>
+            <h3>Remote Sensing &amp; Monitoring</h3>
+            <p>Satellite (Sentinel-2, Landsat-8) and OPTRAM-based assimilation with simulation models for root-zone soil moisture at field scale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">03</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-lead">A decade of training in irrigation, drainage and agricultural engineering.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-marker"><span class="tl-dot"></span></div>
+            <div class="tl-body">
+              <div class="tl-meta">
+                <span class="tl-date">Sep 2019 – Feb 2026</span>
+                <span class="tag tag-gold">GPA 17.44 / 20</span>
+              </div>
+              <h3 class="tl-title">Ph.D. in Irrigation and Drainage Engineering</h3>
+              <p class="tl-org">University of Tehran — Irrigation and Reclamation Engineering, College of Agriculture &amp; Natural Resources</p>
+              <p class="tl-thesis"><em>Thesis:</em> Development of a Decision Support System for Scheduling Irrigation and Fertilization of Greenhouse Cucumber in Conditions of Using Waters with Different Quality.</p>
+              <ul class="tl-notes">
+                <li>Developed an AI-powered, web-based decision support system for greenhouse irrigation and fertigation.</li>
+                <li>Integrated machine learning models with environmental and crop data.</li>
+                <li>Evaluated irrigation strategies under different water-quality conditions.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-marker"><span class="tl-dot"></span></div>
+            <div class="tl-body">
+              <div class="tl-meta">
+                <span class="tl-date">Sep 2016 – Sep 2018</span>
+                <span class="tag tag-gold">GPA 16.75 / 20</span>
+              </div>
+              <h3 class="tl-title">M.Sc. in Irrigation and Drainage Engineering</h3>
+              <p class="tl-org">University of Tehran — Irrigation and Reclamation Engineering</p>
+              <p class="tl-thesis"><em>Thesis:</em> The Effect of Water Salinity on the Growth of Different Varieties of Maize.</p>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <div class="tl-marker"><span class="tl-dot"></span></div>
+            <div class="tl-body">
+              <div class="tl-meta">
+                <span class="tl-date">Sep 2011 – Jul 2015</span>
+                <span class="tag tag-gold">GPA 17.17 / 20</span>
+              </div>
+              <h3 class="tl-title">B.Sc. in Water and Soil Engineering</h3>
+              <p class="tl-org">Payame Noor University, Ajab Shir — Agricultural Engineering</p>
+              <p class="tl-thesis"><em>Achievement:</em> Ranked 1st among B.Sc. students of the 2011 entrance class.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">04</span>
+          <h2 class="section-title">Featured Research &amp; Systems</h2>
+          <p class="section-lead">Two flagship research programmes that anchor my doctoral and postdoctoral agenda.</p>
+        </header>
+
+        <div class="feature-stack">
+          <!-- GreenSmart-DSS -->
+          <article class="feature reveal">
+            <div class="feature-main">
+              <div class="feature-kicker">
+                <span class="tag tag-primary">Doctoral centrepiece</span>
+                <span class="feature-year">2019 – 2026</span>
+              </div>
+              <h3 class="feature-title">GreenSmart-DSS</h3>
+              <p class="feature-sub">A hybrid, AI-driven decision support system for precision greenhouse management</p>
+              <p class="feature-desc">
+                A fully integrated, web-based platform that combines biophysical soil–water–plant processes with
+                machine learning (Random Forest, LightGBM, Optuna) and an optimised fertigation engine. It translates
+                environmental and salinity data into actionable, real-time irrigation and nutrient schedules, and was
+                rigorously validated using two years of greenhouse cucumber experiments under variable saline
+                conditions.
+              </p>
+              <div class="module-grid" aria-label="Platform modules">
+                <div class="module"><b>Dashboard</b><span>Greenhouse registry, crop, soil &amp; sensor settings</span></div>
+                <div class="module"><b>ETo</b><span>Reference ET from six ML models + solarimeter method</span></div>
+                <div class="module"><b>ETc</b><span>FAO-56 crop coefficients and bespoke ML estimators</span></div>
+                <div class="module"><b>Irrigation</b><span>Daily root-zone water balance &amp; scheduling</span></div>
+                <div class="module"><b>Fertigation</b><span>Multi-source water blending &amp; nutrient recipes</span></div>
+                <div class="module"><b>Radiation</b><span>LightGBM solar forecasting from atmospheric clarity</span></div>
+                <div class="module"><b>Feasibility</b><span>Greenhouse heating/cooling demand &amp; site suitability</span></div>
+              </div>
+              <ul class="tech-list" aria-label="Technology stack">
+                <li>Python</li><li>Django 5.2</li><li>PostgreSQL</li><li>Tailwind CSS</li>
+                <li>Scikit-learn</li><li>LightGBM</li><li>Optuna</li><li>Pandas / NumPy</li>
+              </ul>
+            </div>
+            <aside class="feature-aside">
+              <div class="aside-block">
+                <span class="aside-label">Outputs</span>
+                <ul class="aside-list">
+                  <li><a href="https://doi.org/10.1007/s00271-025-01071-4" target="_blank" rel="noopener">Salinity tolerance threshold <span>Irrigation Science, 2026</span></a></li>
+                  <li><a href="https://doi.org/10.22059/jwim.2025.399994.1251" target="_blank" rel="noopener">ML for cucumber ET <span>Water &amp; Irrigation Mgmt., 2025</span></a></li>
+                  <li><a href="https://doi.org/10.22098/mmws.2024.16164.1516" target="_blank" rel="noopener">Random Forest vs. Kc models <span>Water &amp; Soil Mgmt. &amp; Modelling</span></a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/GreenSmart-DSS" target="_blank" rel="noopener">
+                Source code
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </aside>
+          </article>
+
+          <!-- Root-zone soil moisture -->
+          <article class="feature reveal">
+            <div class="feature-main">
+              <div class="feature-kicker">
+                <span class="tag tag-primary">Remote sensing &amp; simulation</span>
+                <span class="feature-year">Published 2025</span>
+              </div>
+              <h3 class="feature-title">Root-Zone Soil Moisture Monitoring at Field Scale</h3>
+              <p class="feature-sub">SWAP agro-hydrological model coupled with Sentinel-2 &amp; Landsat-8 data assimilation</p>
+              <p class="feature-desc">
+                A framework combining the SWAP agro-hydrological model with multi-source satellite data to estimate
+                daily root-zone soil moisture at high spatial resolution for precision irrigation. Inverse modelling
+                and data assimilation with genetic algorithms optimise soil hydraulic parameters and incorporate
+                vegetation indices, reducing reliance on in-situ measurements.
+              </p>
+              <ul class="bullets">
+                <li>Validated across wheat and maize fields under diverse climatic and soil conditions in Iran.</li>
+                <li>Applies OPTRAM and optical satellite image processing for moisture and vegetation monitoring.</li>
+                <li>Demonstrated applicability for variable-rate irrigation to improve water use efficiency in water-scarce regions.</li>
+              </ul>
+              <ul class="tech-list" aria-label="Technology stack">
+                <li>SWAP</li><li>MATLAB</li><li>Sentinel-2</li><li>Landsat-8</li><li>Genetic Algorithms</li><li>OPTRAM</li>
+              </ul>
+            </div>
+            <aside class="feature-aside">
+              <div class="aside-block">
+                <span class="aside-label">Outputs</span>
+                <ul class="aside-list">
+                  <li><a href="https://doi.org/10.1016/j.agwat.2024.109263" target="_blank" rel="noopener">Field-scale soil moisture method <span>Agric. Water Management, 2025</span></a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/GreenSmart-DSS/SWAP-OPTUNA" target="_blank" rel="noopener">
+                Related software
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+            </aside>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OPEN SOURCE ================= -->
+    <section class="section" id="software">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">05</span>
+          <h2 class="section-title">Open-Source Scientific Software</h2>
+          <p class="section-lead">
+            Research-grade tools published to advance open science and reproducibility —
+            <a class="inline-link" href="https://github.com/GreenSmart-DSS" target="_blank" rel="noopener">github.com/GreenSmart-DSS</a>.
+          </p>
+        </header>
+
+        <div class="cards repo-grid">
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">SWAP-OPTUNA</span>
+              <span class="repo-lang">Python</span>
+            </div>
+            <p>A Python framework for calibrating SWAP soil hydraulic parameters using Optuna, running simulations and evaluating results against field observations.</p>
+            <ul class="repo-tags"><li>swap</li><li>optuna</li><li>calibration</li><li>crop-modeling</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/SWAP-OPTUNA" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">IrrigationScheduler</span>
+              <span class="repo-lang">Python</span>
+            </div>
+            <p>A lightweight Python framework for daily root-zone water balance and depletion-based irrigation scheduling.</p>
+            <ul class="repo-tags"><li>irrigation-scheduling</li><li>soil-water-balance</li><li>simulation</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/IrrigationScheduler" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">water-resource-optimizer</span>
+              <span class="repo-lang">Python</span>
+            </div>
+            <p>A modular, deterministic decision-support system that blends heterogeneous water sources, filters them with agronomic constraints and computes the fertigation recipe for a target nutrient solution.</p>
+            <ul class="repo-tags"><li>fertigation</li><li>optimization</li><li>water-quality</li><li>greenhouse</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/water-resource-optimizer" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">RootWaterSim</span>
+              <span class="repo-lang">Jupyter</span>
+            </div>
+            <p>An interactive simulator of 1D unsaturated soil water flow (Richards equation, van Genuchten–Mualem) and Feddes root water uptake — for teaching and research.</p>
+            <ul class="repo-tags"><li>soil-physics</li><li>finite-difference</li><li>streamlit</li><li>educational</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/RootWaterSim" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">physics-informed-eto</span>
+              <span class="repo-lang">Python</span>
+            </div>
+            <p>Compares LightGBM, a vanilla neural network and a Physics-Informed NN for ETo estimation, embedding FAO-56 physics in the loss; physics helps most when measurements are scarce or noisy.</p>
+            <ul class="repo-tags"><li>pinn</li><li>fao56</li><li>lightgbm</li><li>pytorch</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/physics-informed-eto" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">Tree-Based-AutoML-Regression</span>
+              <span class="repo-lang">Python</span>
+            </div>
+            <p>A modular, configuration-driven tree-based regression framework for tabular data — automating EDA, preprocessing, Optuna tuning, training, evaluation and HTML reporting from one YAML file.</p>
+            <ul class="repo-tags"><li>automl</li><li>optuna</li><li>regression</li><li>reporting</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/Tree-Based-AutoML-Regression-Framework" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">Automated-Micro-Lysimeter</span>
+              <span class="repo-lang">C++</span>
+            </div>
+            <p>An open-source, Arduino-based automated micro-lysimeter framework for precise, continuous measurement of reference evapotranspiration in agricultural research.</p>
+            <ul class="repo-tags"><li>arduino</li><li>lysimeter</li><li>load-cell</li><li>smart-farming</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/Automated-Micro-Lysimeter-Arduino" target="_blank" rel="noopener">View repository →</a>
+          </article>
+
+          <article class="card repo-card reveal">
+            <div class="repo-top">
+              <span class="repo-name">ETo_LinearRegression_Baseline</span>
+              <span class="repo-lang">Python</span>
+            </div>
+            <p>A research-grade framework for exhaustive evaluation of meteorological variables in reference evapotranspiration estimation using linear regression baselines.</p>
+            <ul class="repo-tags"><li>eto</li><li>linear-regression</li><li>climate-data</li><li>hydrology</li></ul>
+            <a class="repo-link" href="https://github.com/GreenSmart-DSS/ETo_LinearRegression_Baseline" target="_blank" rel="noopener">View repository →</a>
+          </article>
+        </div>
+        <p class="repo-note reveal">All repositories are released under the MIT license. Fields of activity: decision-support systems, precision agriculture, irrigation management, agricultural AI, water-resources modelling and evapotranspiration.</p>
+      </div>
+    </section>
+
+    <!-- ================= PUBLICATIONS ================= -->
+    <section class="section section-alt" id="publications">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">06</span>
+          <h2 class="section-title">Publications</h2>
+          <p class="section-lead">Eleven peer-reviewed journal articles, including two in leading international journals.</p>
+        </header>
+
+        <h3 class="group-title reveal">
+          <span class="group-rule"></span>
+          International Journals
+          <span class="group-count">2</span>
+        </h3>
+        <ol class="pub-list">
+          <li class="pub reveal">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Salinity tolerance threshold in greenhouse cucumber cultivation: a comparative analysis of mathematical models</h4>
+              <p class="pub-authors">Khoshsimaie Chenar, M., Noory, H., Soltani Salehabadi, F., &amp; Motesharezade, B.</p>
+              <p class="pub-venue"><em>Irrigation Science</em>, 44(2), 35.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.1007/s00271-025-01071-4" target="_blank" rel="noopener">DOI 10.1007/s00271-025-01071-4</a>
+                <a class="pub-action" href="https://orcid.org/0000-0001-9031-7914" target="_blank" rel="noopener">ORCID</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Developing a method for root-zone soil moisture monitoring at the field scale using remote sensing and simulation modeling</h4>
+              <p class="pub-authors">Noory, H., Khoshsima, M., Tsunekawa, A., Tsubo, M., Haregeweyn, N., &amp; Pashapour, S.</p>
+              <p class="pub-venue"><em>Agricultural Water Management</em>, 308, 109263.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.1016/j.agwat.2024.109263" target="_blank" rel="noopener">DOI 10.1016/j.agwat.2024.109263</a>
+                <span class="pub-flag">Scopus indexed</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="group-title reveal">
+          <span class="group-rule"></span>
+          National Journals — Persian, with English abstracts
+          <span class="group-count">9</span>
+        </h3>
+        <ol class="pub-list">
+          <li class="pub reveal">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Application of machine learning algorithms in groundwater level prediction in the Ardabil aquifer</h4>
+              <p class="pub-authors">Hoseini, S. M., &amp; Khoshsimaie Chenar, M.</p>
+              <p class="pub-venue"><em>Iranian Journal of Soil and Water Research</em>, 56(4), 1041–1057.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22059/ijswr.2025.387848.669863" target="_blank" rel="noopener">DOI 10.22059/ijswr.2025.387848.669863</a>
+                <a class="pub-action" href="https://ijswr.ut.ac.ir/article_100808.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Evaluation of the accuracy of different machine learning algorithms in predicting greenhouse cucumber crop evapotranspiration</h4>
+              <p class="pub-authors">Khoshsimaie Chenar, M., Noory, H., Liaghat, A., Soltani Salehabadi, F., &amp; Motesharezadeh, B.</p>
+              <p class="pub-venue"><em>Water and Irrigation Management</em>, 15(3), 563–583.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22059/jwim.2025.399994.1251" target="_blank" rel="noopener">DOI 10.22059/jwim.2025.399994.1251</a>
+                <a class="pub-action" href="https://jwim.ut.ac.ir/article_104310.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Modeling greenhouse cucumber evapotranspiration using machine learning: a random forest approach versus traditional and non-linear crop coefficients</h4>
+              <p class="pub-authors">Khoshsimaie Chenar, M., Tafteh, A., &amp; Ebrahimipak, N.</p>
+              <p class="pub-venue"><em>Water and Soil Management and Modelling</em>, 5(2), 69–87.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22098/mmws.2024.16164.1516" target="_blank" rel="noopener">DOI 10.22098/mmws.2024.16164.1516</a>
+                <a class="pub-action" href="https://mmws.uma.ac.ir/article_3554.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Impact of different salinity levels and irrigation water amounts on yield and water productivity of greenhouse cucumber in two autumn–winter and spring–summer growing periods</h4>
+              <p class="pub-authors">Khoshsimaie Chenar, M., Liaghat, A., Noory, H., Soltani Salehabadi, F., &amp; Motesharezadeh, B.</p>
+              <p class="pub-venue"><em>Water Management in Agriculture</em>.</p>
+              <div class="pub-links">
+                <a class="pub-action" href="https://wmaj.iaid.ir/article_217895.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2024</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Evaluation of AquaCrop and SWAP models in simulating the growth and biomass of different maize cultivars under the conditions of using saline water with drip irrigation system</h4>
+              <p class="pub-authors">Golshani, H., &amp; Khoshsimaie Chenar, M.</p>
+              <p class="pub-venue"><em>Iranian Journal of Soil and Water Research</em>, 55(4), 615–636.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22059/ijswr.2024.372500.669664" target="_blank" rel="noopener">DOI 10.22059/ijswr.2024.372500.669664</a>
+                <a class="pub-action" href="https://ijswr.ut.ac.ir/article_97872.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2021</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Evaluation of SWAP model in estimating soil water content, salinity and yield of three forage maize cultivars under saline water use conditions</h4>
+              <p class="pub-authors">Khoshsimaie Chenar, M., Noory, H., &amp; Mahmoudi Molamahmoud, Z.</p>
+              <p class="pub-venue"><em>Water and Irrigation Management</em>, 11(3), 495–512.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22059/jwim.2021.325835.893" target="_blank" rel="noopener">DOI 10.22059/jwim.2021.325835.893</a>
+                <a class="pub-action" href="https://jwim.ut.ac.ir/article_83148.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2021</span>
+            <div class="pub-body">
+              <h4 class="pub-title">The effect of deficit irrigation and biochar on quantitative and qualitative characteristics of basil</h4>
+              <p class="pub-authors">Fakhrabadi, H., &amp; Khoshsimaie Chenar, M.</p>
+              <p class="pub-venue"><em>Iranian Journal of Irrigation &amp; Drainage</em>, 15(4), 941–954.</p>
+              <div class="pub-links">
+                <span class="pub-flag">No DOI registered</span>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2019</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Effect of drip tape irrigation with saline water on some chemical properties of soil</h4>
+              <p class="pub-authors">Khoshsima, M., &amp; Noori, H.</p>
+              <p class="pub-venue"><em>Journal of Water Research in Agriculture</em>, 33(4), 565–581.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22092/jwra.2020.121239" target="_blank" rel="noopener">DOI 10.22092/jwra.2020.121239</a>
+                <a class="pub-action" href="https://wra.areeo.ac.ir/article_121239.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+          <li class="pub reveal">
+            <span class="pub-year">2019</span>
+            <div class="pub-body">
+              <h4 class="pub-title">Effect of irrigation water salinity on yield and agronomic characteristics of three corn (Zea mays L.) hybrids using drip-tape irrigation</h4>
+              <p class="pub-authors">Khoshsima, M., &amp; Noory, H.</p>
+              <p class="pub-venue"><em>Iranian Journal of Soil and Water Research</em>, 50(8), 2037–2049.</p>
+              <div class="pub-links">
+                <a class="doi-link" href="https://doi.org/10.22059/ijswr.2019.271808.668073" target="_blank" rel="noopener">DOI 10.22059/ijswr.2019.271808.668073</a>
+                <a class="pub-action" href="https://ijswr.ut.ac.ir/article_70794.html" target="_blank" rel="noopener">Journal page</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">07</span>
+          <h2 class="section-title">Technical Skills &amp; Methods</h2>
+          <p class="section-lead">The toolkit behind the research — from scientific computing to field experimentation.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-block reveal">
+            <h3 class="skill-title">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 8-4 4 4 4M15 8l4 4-4 4"/></svg>
+              Programming &amp; Computational Tools
+            </h3>
+            <ul class="chip-list">
+              <li>Python</li><li>NumPy</li><li>Pandas</li><li>SciPy</li><li>Statsmodels</li>
+              <li>Scikit-learn</li><li>LightGBM</li><li>Optuna</li><li>MATLAB</li><li>HTML / CSS</li><li>API integration</li>
+            </ul>
+          </article>
+
+          <article class="skill-block reveal">
+            <h3 class="skill-title">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
+              Machine Learning &amp; Data Analytics
+            </h3>
+            <ul class="chip-list">
+              <li>Supervised learning</li><li>Regression &amp; ensembles</li><li>Cross-validation</li>
+              <li>Hyperparameter tuning</li><li>Time-series analysis</li><li>Feature engineering</li>
+              <li>Matplotlib</li><li>Seaborn</li><li>Plotly</li>
+            </ul>
+          </article>
+
+          <article class="skill-block reveal">
+            <h3 class="skill-title">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 10v9"/></svg>
+              DSS &amp; Software Engineering
+            </h3>
+            <ul class="chip-list">
+              <li>Django</li><li>FastAPI</li><li>Full-stack DSS development</li><li>Model &amp; data integration</li>
+              <li>Crop simulation coupling</li><li>Server / cloud deployment</li>
+            </ul>
+          </article>
+
+          <article class="skill-block reveal">
+            <h3 class="skill-title">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c0-6 3-9 8-10-1 6-3.5 9-8 10Z"/><path d="M12 21C12 15 9 12 4 11c1 6 3.5 9 8 10Z"/></svg>
+              Agro-hydrological &amp; Crop Modelling
+            </h3>
+            <ul class="chip-list">
+              <li>SWAP</li><li>AquaCrop</li><li>HYDRUS-1D</li><li>Soil water balance</li><li>Salinity dynamics</li>
+              <li>ET simulation</li><li>Irrigation scheduling</li><li>Water productivity</li>
+            </ul>
+          </article>
+
+          <article class="skill-block reveal">
+            <h3 class="skill-title">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5m0 14h16"/><circle cx="8" cy="15" r="1.6"/><circle cx="13" cy="11" r="1.6"/><circle cx="18" cy="8" r="1.6"/></svg>
+              Field Experiments &amp; Data Acquisition
+            </h3>
+            <ul class="chip-list">
+              <li>Greenhouse &amp; field experiment design</li><li>Salinity &amp; drought stress trials</li>
+              <li>Soil–plant–water sampling</li><li>Sensor-based monitoring</li><li>Statistical analysis</li><li>System validation</li>
+            </ul>
+          </article>
+
+          <article class="skill-block reveal">
+            <h3 class="skill-title">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M3 12.5 12 17l9-4.5M3 16.5 12 21l9-4.5"/></svg>
+              Honours &amp; Awards
+            </h3>
+            <ul class="award-list">
+              <li><b>Member</b> — Iran's National Elites Foundation (Bonyad Melli Nokhbegan)</li>
+              <li><b>Rank 3</b> — National Ph.D. Entrance Exam, Irrigation &amp; Drainage Engineering (2019)</li>
+              <li><b>Rank 13</b> — National M.Sc. Entrance Exam, Irrigation &amp; Drainage Engineering (2016)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">08</span>
+          <h2 class="section-title">Teaching &amp; Work Experience</h2>
+          <p class="section-lead">Academic service and professional practice alongside research.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-marker"><span class="tl-dot"></span></div>
+            <div class="tl-body">
+              <div class="tl-meta"><span class="tl-date">2021</span></div>
+              <h3 class="tl-title">Workshop Instructor — SWAP Model</h3>
+              <p class="tl-org">Department of Irrigation and Reclamation Engineering, University of Tehran, Iran</p>
+              <ul class="tl-notes">
+                <li>Instructed M.Sc. students on the application and calibration of the SWAP agro-hydrological model.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-marker"><span class="tl-dot"></span></div>
+            <div class="tl-body">
+              <div class="tl-meta"><span class="tl-date">2019 – 2020</span></div>
+              <h3 class="tl-title">Irrigation Engineer</h3>
+              <p class="tl-org">Urmia Lake Restoration Program (Contractor Co.), Ajab Shir, Iran</p>
+              <ul class="tl-notes">
+                <li>Collaborated on water-resource management projects aimed at the restoration of Lake Urmia.</li>
+                <li>Supervised field operations and monitored irrigation system efficiency.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <div class="references reveal">
+          <h3 class="group-title"><span class="group-rule"></span>References<span class="group-count">4</span></h3>
+          <div class="ref-grid">
+            <div class="ref-card">
+              <h4 class="ref-name">Dr. Abdolmajid Liaghat</h4>
+              <p class="ref-role">Full Professor, Dept. of Irrigation &amp; Reclamation Engineering</p>
+              <p class="ref-aff">University of Tehran</p>
+              <a class="ref-mail" href="mailto:Aliaghat@ut.ac.ir">Aliaghat@ut.ac.ir</a>
+            </div>
+            <div class="ref-card">
+              <h4 class="ref-name">Dr. Hamideh Noory</h4>
+              <p class="ref-role">Associate Professor, Dept. of Irrigation &amp; Reclamation Engineering</p>
+              <p class="ref-aff">University of Tehran</p>
+              <a class="ref-mail" href="mailto:Hamideh.noory@detsi.qld.gov.au">Hamideh.noory@detsi.qld.gov.au</a>
+            </div>
+            <div class="ref-card">
+              <h4 class="ref-name">Dr. Forouzandeh Soltani</h4>
+              <p class="ref-role">Assistant Professor, Dept. of Horticultural Science &amp; Landscape Architecture</p>
+              <p class="ref-aff">University of Tehran</p>
+              <a class="ref-mail" href="mailto:Soltanyf@ut.ac.ir">Soltanyf@ut.ac.ir</a>
+            </div>
+            <div class="ref-card">
+              <h4 class="ref-name">Dr. Babak Motesharezadeh</h4>
+              <p class="ref-role">Professor, Dept. of Soil Science</p>
+              <p class="ref-aff">University of Tehran</p>
+              <a class="ref-mail" href="mailto:Babak.motesharezadeh@murdoch.edu.au">Babak.motesharezadeh@murdoch.edu.au</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-index">09</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-lead">Open to research collaboration, supervision and scientific software development.</p>
+        </header>
+
+        <div class="contact-grid reveal">
+          <div class="contact-main">
+            <h3 class="contact-title">Let's talk about water, data and agriculture.</h3>
+            <p class="contact-text">
+              Whether you are interested in collaborative research on evapotranspiration modelling, precision
+              irrigation, agricultural AI, or in adopting and extending my open-source tools — I would be glad to
+              hear from you.
+            </p>
+            <a class="btn btn-primary" href="mailto:khoshsima.mortaza@ut.ac.ir?Subject=Collaboration%20via%20personal%20website">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+              Email me
+            </a>
+          </div>
+          <ul class="contact-chips">
+            <li><a class="chip" href="https://orcid.org/0000-0001-9031-7914" target="_blank" rel="noopener"><span class="chip-mark">iD</span><span>ORCID</span></a></li>
+            <li><a class="chip" href="https://github.com/GreenSmart-DSS" target="_blank" rel="noopener"><span class="chip-mark">GH</span><span>GitHub</span></a></li>
+            <li><a class="chip" href="https://www.linkedin.com/in/morteza-khoshsimaie-chenar-1195a8215" target="_blank" rel="noopener"><span class="chip-mark">in</span><span>LinkedIn</span></a></li>
+            <li><a class="chip" href="https://www.researchgate.net/profile/Morteza-Khoshsima" target="_blank" rel="noopener"><span class="chip-mark">RG</span><span>ResearchGate</span></a></li>
+            <li><a class="chip" href="https://www.scopus.com/inward/authorDetails.url?authorID=58998009500&amp;partnerID=MN8TOARS" target="_blank" rel="noopener"><span class="chip-mark">SC</span><span>Scopus</span></a></li>
+            <li><a class="chip" href="tel:+989147696107"><span class="chip-mark">Ph</span><span>+98 914 769 6107</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="28" height="28" focusable="false">
+            <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".45"/>
+            <path d="M11 27V13M11 20h18M29 27V13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="2.6" fill="currentColor"/>
+          </svg>
+        </span>
+        <div>
+          <p class="footer-name">Morteza Khoshsimaie Chenar</p>
+          <p class="footer-sub">Ph.D. in Irrigation and Drainage Engineering · University of Tehran</p>
+        </div>
+      </div>
+      <p class="footer-meta">
+        Content compiled from ORCID <a href="https://orcid.org/0000-0001-9031-7914" target="_blank" rel="noopener">0000-0001-9031-7914</a>,
+        CV and <a href="https://github.com/GreenSmart-DSS" target="_blank" rel="noopener">GitHub</a>.
+        <br />© <span id="year">2026</span> Morteza Khoshsimaie Chenar. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
